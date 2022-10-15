@@ -22,11 +22,6 @@ document.getElementById("zooSubmit").addEventListener("click", function(event) {
                         <li class='list-group-item'><strong>Length:</strong> <span class='fact'>${json.length_min}ft - ${json.length_max}ft</span></li>
                         <li class='list-group-item'><strong>Weight:</strong> <span class='fact'>${json.weight_min}lbs - ${json.weight_max}lbs</span></li>
                       </ul>
-
-                      <div class='card-body'>
-                        <a href='#' class='card-link'>Card link</a>
-                        <a href='#' class='card-link'>Another link</a>
-                      </div>
                     </div>`
         document.getElementById("animal").innerHTML = card;
         // let results = "";
