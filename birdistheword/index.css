@@ -1,0 +1,110 @@
+:root {
+  --primary: #B9E937;
+  --secondary: #57D131;
+  --tertiary: #406661;
+  --white: #ffffff;
+}
+
+body {
+    background-image: url("./images/bino-moss.jpg");
+    background-size: cover;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: 70% 0;
+    background-attachment: fixed;
+}
+
+#definition {
+    color: white;
+    font-family: 'Playfair Display', serif;
+    width: 640px;
+    margin-left: auto;
+    margin-right: 180px;
+    margin-top: 20vh;
+}
+
+@media only screen and (max-width: 1400px) {
+    #definition {
+        width: 440px;
+        margin-top: 15vh;
+    }
+    h1 {
+        font-size: 6rem !important;
+    }
+    h4 {
+        font-size: 1.9rem !important;
+    }
+    p {
+        font-size: 1rem !important;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #definition {
+        width: 100%;
+        padding: 10%;
+        margin: 0;
+    }
+    h1 {
+        font-size: 4rem !important;
+    }
+    h4 {
+        font-size: 1.5rem !important;
+    }
+    p {
+        font-size: 1rem !important;
+    }
+}
+
+#definition h4 span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+#definition a {
+    background-color: var(--secondary);
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    margin: 0;
+    outline: none;
+    padding: 10px 16px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+#definition a:hover,
+#definition a:focus {
+    background-color: var(--tertiary);
+}
+
+h1 {
+    font-size: 8.5rem;
+}
+h4 {
+    font-size: 2.5rem;
+}
+p {
+    font-size: 1.25rem;
+}

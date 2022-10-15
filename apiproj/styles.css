@@ -1,0 +1,155 @@
+body {
+    background-image: url(./images/sky.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    flex: 1;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 3rem;
+    justify-content: center;
+}
+
+#top h1 {
+    margin: 0 .5rem;
+}
+#top h4 {
+    margin: 0;
+    margin-top: .2rem;
+    color: #F29D52;
+}
+
+#search-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+}
+
+@media only screen and (max-width: 1600px) {
+    #content {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 800px) {
+    #weatherResults {
+        width: 75%;
+    }
+}
+
+#zooSubmit {
+    text-align: center;
+    width: 7rem;
+background: linear-gradient(180deg, rgba(255,172,98,1) 0%, rgba(230,131,122,1) 100%);
+    color: white;
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+}
+#zooSubmit:hover {
+cursor: pointer;
+}
+#zooSubmit:active {
+    background: linear-gradient(0deg, rgba(255,172,98,1) 0%, rgba(230,131,122,1) 100%);
+}
+
+#weatherResults {
+    padding: 2rem;
+    width: 600px;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+#weather {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: normal;
+}
+.temp-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+.temp-container .temp {
+    font-size: 4rem;
+}
+.temp-container .degree {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.details-container {
+    
+}
+.desc-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#forecastResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+}
+.day-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, .7);
+}
+.day {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.time-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.time-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem;
+}
+
+#footer {
+    background-color: #4D628C;
+    padding: 1rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
