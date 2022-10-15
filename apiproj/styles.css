@@ -1,5 +1,6 @@
 body {
-    background-image: url(./images/sky.jpg);
+    background-image: url(./images/zoo_bg.jpg);
+    backdrop-filter: blur(2px);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -29,11 +30,8 @@ body {
 
 #top h1 {
     margin: 0 .5rem;
-}
-#top h4 {
-    margin: 0;
-    margin-top: .2rem;
-    color: #F29D52;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
 #search-container {
@@ -58,8 +56,9 @@ body {
 #zooSubmit {
     text-align: center;
     width: 7rem;
-background: linear-gradient(180deg, rgba(255,172,98,1) 0%, rgba(230,131,122,1) 100%);
-    color: white;
+background: linear-gradient(180deg, #d4fc79 0%, #96e6a1 100%);
+    color: darkgreen;
+    font-weight: bold;
     padding: .5rem;
     border: none;
     border-radius: 10px;
@@ -68,88 +67,28 @@ background: linear-gradient(180deg, rgba(255,172,98,1) 0%, rgba(230,131,122,1) 1
 cursor: pointer;
 }
 #zooSubmit:active {
-    background: linear-gradient(0deg, rgba(255,172,98,1) 0%, rgba(230,131,122,1) 100%);
+    background: linear-gradient(0deg, #d4fc79 0%, #96e6a1 100%);
 }
 
-#weatherResults {
-    padding: 2rem;
-    width: 600px;
-    background-color: rgba(0, 0, 0, .7);
-}
-
-#weather {
+#animal {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
-.hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: normal;
-}
-.temp-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: flex-start;
-}
-.temp-container .temp {
-    font-size: 4rem;
-}
-.temp-container .degree {
-    font-size: 1.5rem;
-    margin-top: 0.5rem;
-}
-
-.details-container {
-    
-}
-.desc-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-#forecastResults {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-}
-.day-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem;
-    padding: 2rem;
-    background-color: rgba(0, 0, 0, .7);
-}
-.day {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-}
-.time-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-.time-col {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 1rem;
+.card {
+    max-width: 800px;
 }
 
 #footer {
-    background-color: #4D628C;
+    background-color: #8C5230;
     padding: 1rem 0;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+#footer a {
+    color: white;
 }
