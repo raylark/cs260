@@ -1,0 +1,44 @@
+body {
+    background-color: white;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 100px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: white;
+  color: black;
+}
+li:last-child {
+    float: right;
+}
+.navbar-container .active a {
+    color: gold;
+}
+
+.content {
+    padding: 0px 30%;
+}
+.about {
+    margin-top: 80px;
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 2em;
+}

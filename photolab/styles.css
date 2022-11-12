@@ -1,0 +1,57 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.slick-track {
+    height: 70vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-track {
+        height: 30vh;
+    }
+}
+
+.slick-slide, .slick-slide img {
+    height: inherit;
+}
+
+.slick-prev {
+    margin-left: 10%;
+    z-index: 1;
+}
+
+.slick-next {
+    margin-right: 10%;
+    z-index: 1;
+}
+
+.container {
+    padding: 3rem;
+    max-width: 1200px;
+}
+.container h3 {
+    margin: 25px 0;
+}
+
+.spacer {
+    height: 40px;
+}
+
+.block-links {
+    height: 120px;
+}
+.block-links a {
+    height: inherit;
+}
+
+.gallery img {
+    width: 200px; /* You can set the dimensions to whatever you want */
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-container {
+    max-width: 1200px;
+}

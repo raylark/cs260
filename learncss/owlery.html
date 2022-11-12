@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stay Dumble</title>
+        <link rel='stylesheet' href='light.css'/>
+        <link rel='stylesheet' href='owlery.css'/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+		<link rel="icon" href="./images/favicon.png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen&family=Roboto&display=swap" rel="stylesheet">
+    </head>
+	<body>
+		<div class="navbar-container">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li class='active'><a href="owlery.html">Owlery</a></li>
+			</ul>
+		</div>
+		<div class="content">
+		    <div class="contact">
+    		    <h2>Write me a letter</h2>
+    		    <hr>
+    		    <div class='fields'>
+    		        <div class="names">
+        		        <div class='first-name'>
+                            <label for="first-name">First Name:</label>
+                            <select id="first-name" name="first-name" required>
+                              <option value="harry">Harry</option>
+                              <option value="not">Irrelevant</option>
+                            </select>      
+        		        </div>
+        		        <div class='last-name'>
+                            <label for="last-name">Last Name:</label>
+                            <select id="last-name" name="last-name" required>
+                              <option value="potter">Potter</option>
+                              <option value="not">Irrelevant</option>
+                            </select>      		            
+        		        </div>
+    		        </div>
+                    <div class="house">
+                        <label for="house">House:</label>
+                        <select id="house" name="house" required>
+                          <option value="gryffindor">Gryffindor</option>
+                          <option value="not">Irrelevant</option>
+                          <option value="not">Irrelevant</option>
+                          <option value="not">Irrelevant</option>
+                        </select>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message:</label>
+                        <input type="text" id="message" name="message" placeholder="Dear Dumbledore, DID YOU PUT HARRY'S NAME IN THE GOBLET OF FIRE?!!!" "DID YOU PUT HIS NAME IN THE GOBLET OF FIRE?!!!"/>
+                    </div>
+    		    </div>
+    		    <button type="submit">Send</button>
+		    </div>
+		</div>
+	</body>
+</html>

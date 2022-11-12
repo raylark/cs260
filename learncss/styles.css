@@ -1,0 +1,21 @@
+:root {
+  --primary: #B9E937;
+  --secondary: #57D131;
+  --tertiary: #406661;
+  --white: #ffffff;
+}
+
+body {
+    background-color: #F5F5F5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link.active {
+    color: var(--primary);
+}
+.navbar-brand span {
+    color: var(--secondary);
+}
+.nav-item .nav-link:hover {
+    color: var(--secondary);
+}
